@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>ini baruna</title>
+	<title>Tugas Gradi</title>
 </head>
 <body>
+	<!-- Bagian Header -->
 	<header>
 		<center>
 		<p>
@@ -13,7 +14,9 @@
 		</p>
 				<h1>HTML 5</h1>
 		</center>
+	</header>
 
+		<!-- Daftar Isi -->
 		 <nav>
 		 	<a name="daftarisi">
 		 		<h3>Daftar Isi</h3>
@@ -35,12 +38,13 @@
 		 	<hr width="100%">
 		</nav>
 
-		<main>
+	<!-- Bagian Form-->
+	<main>
 			<a name="menujuform">
 				<h3>FORM</h3>
 			</a>
 				<section>
-					<form action="halaman2.html" method="get">
+					<form method="post" action="halaman2.php" method="get" id="form-daftar">
 					<p>	
 						<label>Nama:</label>
 							<input type="text" name="username" placeholder="username"/>
@@ -55,27 +59,28 @@
 					</p>
 						
 						<label>Jenis Kelamin:</label> 
-   						<input type="radio" name="hobi1" value="HTML"/>Laki -laki
-   						<input type="radio" name="hobi1" value="HTML"/>Perempuan
-   						<input type="radio" />Waria
+   						<input type="radio" name="Jenis Kelamin" value="Laki - laki"/>Laki -laki
+   						<input type="radio" name="Jenis Kelamin" value="Perempuan"/>Perempuan
+   						<input type="radio" name="Jenis Kelamin" value="Tidak Dijelaskan" />Tidak Dijelaskan
    					<p>	
    						<label>Hobi:</label>
-   						<input type="checkbox" name="hobi1" value="HTML"/>Berkendara
-   						<input type="checkbox" name="hobi1" value="HTML"/>Bermain Musik
-   						<input type="checkbox" />Belajar
+   						<input type="checkbox" name="hobi1" value="Berkendara"/>Berkendara
+   						<input type="checkbox" name="hobi2" value="Bermain Musik"/>Bermain Musik
+   						<input type="checkbox" name="hobi3" value="Belajar"/>Belajar
    						<br>
    						<br>
    						<td>
-   							<button type="submit">Simpan</button>
+   							<input type="submit" value="Simpan">
    						</td>
    						<td>
-   							<button type="submit">Reset</button>
+   							<input type="submit" value="Reset">
    						</td>
    						<hr width="100%">
    					</p>
    						
 				</section>
-			
+		
+		<!-- Isi Tabel -->	
 		<section>
 		<a name="menujutabel">	
 			<h3>TABEL</h3>
@@ -84,45 +89,45 @@
 					<tr>
 						<td style="text-align: center;">NO</td>
 						<td style="text-align: center;">Nama</td>
-						<td style="text-align: center;">Kuliah</td>
-						<td style="text-align: center;">Gereja</td>
-						<td style="text-align: center;">Motor</td>
+						<td style="text-align: center;">Deskripsi 1</td>
+						<td style="text-align: center;">Deskripsi 2</td>
+						<td style="text-align: center;">Deskripsi 3</td>
 					</tr>
 					<tr>
 						<td style="text-align: center;">1</td>
 						<td style="text-align: center;">Baruna Marines</td>
-						<td style="text-align: center;">Unla</td>
-						<td style="text-align: center;">MY</td>
-						<td style="text-align: center;">Zx10rr</td>
+						<td style="text-align: center;">ABC</td>
+						<td style="text-align: center;">DEF</td>
+						<td style="text-align: center;">GHI</td>
 					</tr>
 					<tr>
 						<td style="text-align: center;">2</td>
 						<td style="text-align: center;">Gradi</td>
-						<td style="text-align: center;">Unikom</td>
-						<td colspan="2" style="text-align: center;">MY</td>
+						<td style="text-align: center;">JKL</td>
+						<td colspan="2" style="text-align: center;">MNO</td>
 						
 					</tr>
 					<tr>
 						<td style="text-align: center;">3</td>
 						<td style="text-align: center;">Tita</td>
-						<td rowspan="2">Unpar Marnat</td>
-						<td style="text-align: center;">MY</td>
-						<td style="text-align: center;">Ducati Panigale</td>
+						<td rowspan="2" style="text-align: center;">PQR</td>
+						<td style="text-align: center;">STU</td>
+						<td style="text-align: center;">VWX</td>
 					</tr>
 					<tr>
 						<td style="text-align: center;">4</td>
-						<td style="text-align: center;">Tirta</td>
-						<td style="text-align: center;">MY</td>
-						<td style="text-align: center;">Honda Sp1</td>
+						<td style="text-align: center;">Yohana</td>
+						<td style="text-align: center;">YZA</td>
+						<td style="text-align: center;">BCD</td>
 					</tr>
 				</table>
 				<hr width="100%">
 		</section>
-</main>
-		
-<footer>
-	Baruna, 5 Desember 2018 &copy; Baruna IT
-</footer>
-	</header>
+	</main>
+	
+	<!-- Isi Footer -->
+	<footer>
+		Baruna, 5 Desember 2018 &copy; Baruna IT
+	</footer>
 </body>
 </html>
