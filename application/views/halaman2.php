@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Tugas Gradi</title>
+	<title>TUGAS GRADI</title>
 </head>
 <body>
 	<!-- Bagian Header -->
@@ -43,37 +43,37 @@
 			<a name="menujuform">
 				<h3>FORM</h3>
 			</a>
-				<section>
+				<section id="sec-form">
 					<form method="post" action="halaman2.php" method="get" id="form-daftar">
 					<p>	
-						<label>Nama:</label>
-							<input type="text" name="username" placeholder="username"/>
+						<label for="input-username">Nama:</label>
+							<input type="text" id="input-username" placeholder=""/>
 					</p>
 					<p>
-						<label>Email:</label>
-							<input type="Email" name="email" placeholder="email"/>
+						<label for="input-email">Email:</label>
+							<input type="Email" id="input-email" placeholder=""/>
 					</p>
 					<p>
-						<label>Tanggal Lahir:</label>
-							<input date="tanggal lahir" name="tanggal lahir" placeholder="tanggal lahir"/>
+						<label for="input-tanggal_lahir">Tgl. lahir:</label>
+							<input date="Tanggal-lahir" id="Tanggal-lahir" placeholder="YYYY/MM/DD"/>
 					</p>
 						
-						<label>Jenis Kelamin:</label> 
-   						<input type="radio" name="Jenis Kelamin" value="Laki - laki"/>Laki -laki
-   						<input type="radio" name="Jenis Kelamin" value="Perempuan"/>Perempuan
-   						<input type="radio" name="Jenis Kelamin" value="Tidak Dijelaskan" />Tidak Dijelaskan
+						<label for="input-Jenis_kelamis">Jenis Kelamin:</label> 
+   						<input type="radio" name="Jenis-kelamin" id="Jenis-kelamin" value="Laki-laki"/>Laki-laki
+   						<input type="radio" name="Jenis-kelamin" id="Jenis-kelamin" value="Perempuan"/>Perempuan
+   						<input type="radio" name="Jenis-kelamin" id="Jenis-kelamin" value="Tidak-Dijelaskan" />Tidak dijelaskan
    					<p>	
-   						<label>Hobi:</label>
-   						<input type="checkbox" name="hobi1" value="Berkendara"/>Berkendara
-   						<input type="checkbox" name="hobi2" value="Bermain Musik"/>Bermain Musik
-   						<input type="checkbox" name="hobi3" value="Belajar"/>Belajar
+   						<label for="input-hobi">Hobi:</label>
+   						<input type="checkbox" name="hobi[]" value="Berkendara"/>Berkendara
+   						<input type="checkbox" name="hobi[]" value="Bermain-Musik"/>Bermain Musik
+   						<input type="checkbox" name="hobi[]" value="Belajar"/>Belajar
    						<br>
    						<br>
    						<td>
-   							<input type="submit" value="Simpan">
+   							<input type="submit"  id="Simpan" value="Simpan">
    						</td>
    						<td>
-   							<input type="submit" value="Reset">
+   							<input type="Reset" id="Reset" value="Reset">
    						</td>
    						<hr width="100%">
    					</p>
@@ -81,46 +81,49 @@
 				</section>
 		
 		<!-- Isi Tabel -->	
-		<section>
+		<section id="sec-form">
 		<a name="menujutabel">	
 			<h3>TABEL</h3>
 		</a>
+			 
 				<table border="1">
+					<thead>
 					<tr>
-						<td style="text-align: center;">NO</td>
-						<td style="text-align: center;">Nama</td>
-						<td style="text-align: center;">Deskripsi 1</td>
-						<td style="text-align: center;">Deskripsi 2</td>
-						<td style="text-align: center;">Deskripsi 3</td>
+						<th style="text-align: center;" scope="col">NO</th>
+						<th style="text-align: center;" scope="col">NAMA</th>
+						<th style="text-align: center;" scope="col">DESKRIPSI 1</th>
+						<th style="text-align: center;" scope="col">DESKRIPSI 2</th>
+						<th style="text-align: center;" scope="col">DESKRIPSI 3</th>
 					</tr>
 					<tr>
-						<td style="text-align: center;">1</td>
-						<td style="text-align: center;">Baruna Marines</td>
+						<th style="text-align: center;" scope="row">1</th>
+						<td style="text-align: center;">Baruna</th>
 						<td style="text-align: center;">ABC</td>
 						<td style="text-align: center;">DEF</td>
 						<td style="text-align: center;">GHI</td>
 					</tr>
 					<tr>
-						<td style="text-align: center;">2</td>
+						<th style="text-align: center;" scope="row">2</th>
 						<td style="text-align: center;">Gradi</td>
 						<td style="text-align: center;">JKL</td>
 						<td colspan="2" style="text-align: center;">MNO</td>
 						
 					</tr>
 					<tr>
-						<td style="text-align: center;">3</td>
+						<th style="text-align: center;" scope="row">3</th>
 						<td style="text-align: center;">Tita</td>
 						<td rowspan="2" style="text-align: center;">PQR</td>
 						<td style="text-align: center;">STU</td>
 						<td style="text-align: center;">VWX</td>
 					</tr>
 					<tr>
-						<td style="text-align: center;">4</td>
+						<th style="text-align: center;" scope="row">4</th>
 						<td style="text-align: center;">Yohana</td>
 						<td style="text-align: center;">YZA</td>
 						<td style="text-align: center;">BCD</td>
 					</tr>
 				</table>
+			
 				<hr width="100%">
 		</section>
 	</main>
