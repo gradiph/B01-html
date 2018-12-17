@@ -53,7 +53,7 @@
 					</p>
 					<p>
 						<label for="input_tanggal_lahir">Tgl. lahir:</label>
-						<input date="date" id="input_tanggal_lahir" name="input_tanggal_lahir" placeholder="YYYY/MM/DD"/>
+						<input type="date"  id="input_tanggal_lahir" name="input_tanggal_lahir" placeholder="YYYY/MM/DD"/>
 					</p>
 					<label for="Jenis_kelamin">Jenis Kelamin:</label>
 					<input type="radio" name="Jenis_kelamin" id="Jenis_kelamin" value="Laki_laki"/>Laki-laki
@@ -69,6 +69,7 @@
 						<td><input type="submit"  id="Simpan" value="Simpan" name="Simpan"></td>
 						<td><input type="Reset" id="Reset" value="Reset" name="Reset"></td>
 					</p>
+				</form>
 				</section>
 				<hr width="100%">
 				
